@@ -1,0 +1,205 @@
+ * {
+     box-sizing: border-box;
+ }
+ 
+ body {
+     font-family: Arial, sans-serif;
+     background: #f8f9fa;
+     margin: 0;
+     padding: 0;
+     line-height: 1.6;
+ }
+ 
+ header {
+     background: #005494;
+     color: white;
+     padding: 20px 0;
+     text-align: center;
+ }
+ 
+ header h1 {
+     margin: 0 0 10px 0;
+     font-size: 28px;
+ }
+ 
+ header h3 {
+     margin: 0;
+     font-weight: normal;
+     font-size: 18px;
+ }
+ 
+ section {
+     margin: 20px auto;
+     max-width: 900px;
+     background: white;
+     padding: 25px;
+     border-radius: 8px;
+     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+ }
+ 
+ h2 {
+     color: #005494;
+     margin-top: 0;
+ }
+ 
+ .ticket-form label {
+     display: block;
+     margin-top: 16px;
+     font-weight: bold;
+     color: #333;
+ }
+ 
+ .ticket-form input,
+ .ticket-form textarea,
+ .ticket-form select {
+     width: 100%;
+     padding: 12px;
+     margin-top: 6px;
+     border-radius: 4px;
+     border: 1px solid #ddd;
+     font-size: 14px;
+     transition: border-color 0.3s ease;
+ }
+ 
+ .ticket-form input:focus,
+ .ticket-form textarea:focus,
+ .ticket-form select:focus {
+     outline: none;
+     border-color: #005494;
+     box-shadow: 0 0 0 2px rgba(0, 84, 148, 0.2);
+ }
+ 
+ .ticket-form textarea {
+     resize: vertical;
+     min-height: 100px;
+ }
+ 
+ .ticket-form button {
+     margin-top: 20px;
+     padding: 12px 24px;
+     background: #005494;
+     color: white;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     font-size: 16px;
+     transition: background-color 0.3s ease;
+ }
+ 
+ .ticket-form button:hover {
+     background: #003d6b;
+ }
+ 
+ .ticket-form button:disabled {
+     background: #ccc;
+     cursor: not-allowed;
+ }
+ 
+ .info {
+     background: #e3f1ff;
+     padding: 16px;
+     border-radius: 6px;
+     margin-top: 24px;
+     border-left: 4px solid #005494;
+ }
+ 
+ .success-message {
+     background: #d4edda;
+     color: #155724;
+     padding: 16px;
+     border-radius: 6px;
+     margin-top: 20px;
+     border-left: 4px solid #28a745;
+     display: none;
+ }
+ 
+ .error-message {
+     background: #f8d7da;
+     color: #721c24;
+     padding: 16px;
+     border-radius: 6px;
+     margin-top: 20px;
+     border-left: 4px solid #dc3545;
+     display: none;
+ }
+ 
+ .required {
+     color: red;
+ }
+ /* Historial de tickets */
+ 
+ #ticketHistory {
+     margin-top: 30px;
+ }
+ 
+ .ticket-item {
+     background: #f1f1f1;
+     border-left: 4px solid #005494;
+     padding: 12px;
+     margin-bottom: 10px;
+     border-radius: 6px;
+ }
+ 
+ .ticket-item strong {
+     color: #005494;
+ }
+ 
+ @media (max-width: 768px) {
+     section {
+         margin: 20px 10px;
+         padding: 20px;
+     }
+     header h1 {
+         font-size: 24px;
+     }
+     header h3 {
+         font-size: 16px;
+     }
+ }
+ /* Estilos básicos para login */
+ 
+ #loginSection {
+     max-width: 400px;
+     margin: 40px auto;
+     padding: 20px;
+     border: 1px solid #ccc;
+     border-radius: 12px;
+     background-color: #f9f9f9;
+     text-align: center;
+ }
+ 
+ #loginSection h2 {
+     margin-bottom: 20px;
+ }
+ 
+ #loginSection input {
+     width: 90%;
+     padding: 10px;
+     margin: 10px 0;
+     border-radius: 8px;
+     border: 1px solid #ccc;
+ }
+ 
+ #loginSection button {
+     padding: 10px 20px;
+     background-color: #007bff;
+     color: #fff;
+     border: none;
+     border-radius: 8px;
+     cursor: pointer;
+ }
+ 
+ #loginSection button:hover {
+     background-color: #0056b3;
+ }
+ 
+ #errorLogin {
+     color: red;
+     font-size: 14px;
+     display: none;
+ }
+ /* Ocultar formulario de tickets inicialmente */
+ 
+ #ticketSection {
+     display: none;
+ }
